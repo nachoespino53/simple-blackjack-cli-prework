@@ -31,6 +31,7 @@ end
 def hit?(arg)
   prompt_user
   get_user_input
+  return arg
 end
 
 def invalid_command
