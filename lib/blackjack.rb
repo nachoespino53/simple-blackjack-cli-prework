@@ -46,6 +46,13 @@ end
 #####################################################
 
 def runner
-  
+  welcome
+  total = initial_round
+  loop do 
+    if total > 21
+      end_game
+      break
+    end
+  end
 end
     
