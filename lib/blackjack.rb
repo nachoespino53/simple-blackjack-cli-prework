@@ -11,19 +11,19 @@ def display_card_total(card_total)
 end
 
 def prompt_user
-  # code #prompt_user here
+  puts "Type 'h' to hit or 's' to stay"
 end
 
 def get_user_input
-  # code #get_user_input here
+  gets.chomp
 end
 
-def end_game
-  # code #end_game here
+def end_game(end_game)
+  puts end_game
 end
 
 def initial_round
-  # code #initial_round here
+  deal_card + deal_card
 end
 
 def hit?
