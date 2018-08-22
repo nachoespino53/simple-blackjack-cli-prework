@@ -33,12 +33,16 @@ def hit?(arg)
   input = get_user_input
   if input == "h"
     arg = arg + deal_card
+  elsif input == "s"
+    return arg
+  else
+    invalid_command
   end
   return arg
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
@@ -48,12 +52,11 @@ end
 def runner
   welcome
   total = initial_round
-  loop do 
-    if total > 21
-      end_game
-      break
-    end
+  until total > 21 
     hit?(total)
+  end
+  if total > 21
+    end_game
   end
 end
     
