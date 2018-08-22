@@ -31,7 +31,7 @@ end
 def hit?(arg)
   prompt_user
   input = get_user_input
-  if input == "h" do
+  if input == "h"
     arg = arg + deal_card
   end
   return arg
